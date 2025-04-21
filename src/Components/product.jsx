@@ -20,7 +20,6 @@ export default function ProductList({ addToCart }) {
 
   return (
     <div className="product-list">
-      <h2>Products</h2>
       <div className="product-grid">
         {products.map((product) => (
           <div className="product-card" key={product.id}>

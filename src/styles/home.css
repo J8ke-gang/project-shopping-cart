@@ -1,11 +1,4 @@
-
 .home-page-container {
-  min-height: 100vh;
-  width: 100%;
-  background-image: url("https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29vZGVuJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,8 +6,6 @@
   padding: 2rem;
   color: #f0c040;
   text-align: center;
-  position: relative;
-  z-index: 1;
 }
 
 .welcome-section {
@@ -57,4 +48,36 @@
 .browse-button:hover {
   background-color: #f0c040;
   transform: scale(1.05);
+}
+
+/*for small screens/phones*/
+@media (max-width: 768px) {
+  .welcome {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .browse-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page-container {
+    padding: 1rem;
+  }
+
+  .welcome {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  .browse-button {
+    width: 100%;
+    padding: 12px 0;
+  }
 }

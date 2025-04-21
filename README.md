@@ -6,7 +6,6 @@ A increment and decrement button You can also display a title for each product a
 fetch shop items from fakestore api
 when a user submits order the amount in cart will adjust
 
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

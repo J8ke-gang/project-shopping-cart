@@ -5,7 +5,6 @@ import Shop from "./Pages/shop";
 import Cart from "./Pages/cart";
 import Navbar from "./Components/navbar";
 
-
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -35,7 +34,9 @@ function App() {
 
   return (
     <div>
-      <Navbar cartItemCount={cart.reduce((sum, item) => sum + item.quantity, 0)} />
+      <Navbar
+        cartItemCount={cart.reduce((sum, item) => sum + item.quantity, 0)}
+      />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop addToCart={addToCart} />} />
@@ -48,6 +49,4 @@ function App() {
   );
 }
 
-
 export default App;
-
